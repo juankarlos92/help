@@ -1,7 +1,7 @@
 <template>
     <!-- New Navigation -->
     <!-- ====== Navbar Section Start -->
-    <nav id="topnav" class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent">
+    <nav id="topnav" class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-[#007579]">
         <div id="dropdown" />
         <div class="container">
             <div class="relative -mx-4 flex items-center justify-between">
