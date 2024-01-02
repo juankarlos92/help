@@ -2118,6 +2118,10 @@ body .dark.layout_landing .form-input,body .dark.layout_landing
 .border-opacity-40{
   --tw-border-opacity: 0.4;
 }
+.bg-\[\#007579\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 117 121 / var(--tw-bg-opacity));
+}
 .bg-\[\#0284c7\]{
   --tw-bg-opacity: 1;
   background-color: rgb(2 132 199 / var(--tw-bg-opacity));
@@ -2524,6 +2528,9 @@ body .dark.layout_landing .form-input,body .dark.layout_landing
 }
 .pt-1{
   padding-top: 0.25rem;
+}
+.pt-12{
+  padding-top: 3rem;
 }
 .pt-2{
   padding-top: 0.5rem;

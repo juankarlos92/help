@@ -7,8 +7,8 @@
             <div class="relative -mx-4 flex items-center justify-between">
                 <div class="w-60 max-w-full px-4">
                     <Link :href="route('home')" class="logo pl-0 mt-2 mb-2">
-                        <logo class="help-desk-logo"/>
-                        <logo name="white" class="help-desk-logo white"/>
+                    <logo class="help-desk-logo" />
+                    <logo name="white" class="help-desk-logo white" />
                     </Link>
                 </div>
                 <div class="flex w-full items-center justify-end px-4">
@@ -61,7 +61,9 @@
                                 <template #default>
                                     <div class="flex items-center cursor-pointer group">
                                         <div class=" mr-1 whitespace-nowrap text-white">
-                                            <img v-if="$page.props.auth.user.photo" class="user_photo w-8 h-8" :alt="$page.props.auth.user.first_name" :src="$page.props.auth.user.photo" />
+                                            <img v-if="$page.props.auth.user.photo" class="user_photo w-8 h-8"
+                                                :alt="$page.props.auth.user.first_name"
+                                                :src="$page.props.auth.user.photo" />
                                             <img v-else src="/images/svg/profile.svg" class="w-8 h-8" alt="user profile" />
                                             <span class="hidden">{{ $page.props.auth.user.first_name }}</span>
                                             <span class="hidden">{{ $page.props.auth.user.last_name }}</span>
@@ -71,20 +73,24 @@
                                 </template>
                                 <template #dropdown>
                                     <div class="shadow-xl bg-white rounded text-sm">
-                                        <Link class="block px-6 py-2 hover:bg-indigo-500 hover:text-white" :href="route('dashboard')">{{ __('Dashboard') }}</Link>
-                                        <Link class="block px-6 py-2 hover:bg-indigo-500 hover:text-white" :href="route('tickets')">{{ __('Tickets') }}</Link>
-                                        <Link class="block px-6 py-2 hover:bg-indigo-500 hover:text-white" :href="route('users.edit.profile')">{{ __('Edit Profile') }}</Link>
-                                        <Link class="block px-6 py-2 hover:bg-indigo-500 hover:text-white w-full text-left" :href="route('logout')" method="delete" as="button">{{ __('Logout') }}</Link>
+                                        <Link class="block px-6 py-2 hover:bg-indigo-500 hover:text-white"
+                                            :href="route('dashboard')">{{ __('Dashboard') }}</Link>
+                                        <Link class="block px-6 py-2 hover:bg-indigo-500 hover:text-white"
+                                            :href="route('tickets')">{{ __('Tickets') }}</Link>
+                                        <Link class="block px-6 py-2 hover:bg-indigo-500 hover:text-white"
+                                            :href="route('users.edit.profile')">{{ __('Edit Profile') }}</Link>
+                                        <Link class="block px-6 py-2 hover:bg-indigo-500 hover:text-white w-full text-left"
+                                            :href="route('logout')" method="delete" as="button">{{ __('Logout') }}</Link>
                                     </div>
                                 </template>
                             </dropdown>
                         </div>
                     </div>
-                    <div v-else class="hidden justify-end pr-16 sm:flex lg:pr-0">
-                        <a :href="route('login')" class="signUpBtn rounded-lg bg-white bg-opacity-20 py-3 px-6 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark">
-                            Login
-                        </a>
-                    </div>
+                    <!-- <div v-else class="hidden justify-end pr-16 sm:flex lg:pr-0"> -->
+                    <!--     <a :href="route('login')" class="signUpBtn rounded-lg bg-white bg-opacity-20 py-3 px-6 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"> -->
+                    <!--         Login -->
+                    <!--     </a> -->
+                    <!-- </div> -->
                 </div>
             </div>
         </div>
@@ -94,7 +100,7 @@
 import Logo from '@/Shared/Logo'
 import Dropdown from '@/Shared/Dropdown'
 import Icon from '@/Shared/Icon'
-import {Link} from '@inertiajs/inertia-vue3'
+import { Link } from '@inertiajs/inertia-vue3'
 
 export default {
     components: {
@@ -157,10 +163,10 @@ export default {
             this.windowScroll();
         })
 
-        window.onload = function(){
+        window.onload = function () {
             const navbarToggler = document.getElementById('navbarToggler')
             const navbarCollapse = document.getElementById("navbarCollapse")
-            navbarToggler.onclick = function() {
+            navbarToggler.onclick = function () {
                 navbarToggler.classList.toggle("navbarTogglerActive")
                 navbarCollapse.classList.toggle("hidden")
             }

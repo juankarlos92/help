@@ -2,12 +2,12 @@
     <div>
         <!-- Start Hero -->
         <Head title="Home" />
-        <section class="relative z-10 overflow-hidden bg-primary pt-[120px] pb-[100px] md:pt-[130px] lg:pt-[160px]">
+        <section class="relative z-10 overflow-hidden bg-primary pt-20 pb-[100px]">
             <div class="container">
                 <div class="-mx-4 flex flex-wrap items-center">
                     <div class="w-full px-4">
                         <div class="text-center">
-                            <h1 class="text-4xl font-semibold text-white">{{ 'Open a ticket' }}</h1>
+                            <h1 class="text-4xl font-semibold text-white">{{ 'Ingrese su requerimiento' }}</h1>
                         </div>
                     </div>
                 </div><!--end grid-->
@@ -25,7 +25,7 @@
         </section><!--end section-->
 
         <!-- Start -->
-        <section class="pt-20 pb-10 lg:pt-[120px] lg:pb-20 bg-gray-50">
+        <section class="pt-12 pb-10 lg:pb-20 bg-[#007579]">
             <div class="container">
                 <form class="card mt-2 p-4 rounded shadow-xl overflow-hidden" @submit.prevent="store" enctype="multipart/form-data">
                     <div class="px-5 pt-8">

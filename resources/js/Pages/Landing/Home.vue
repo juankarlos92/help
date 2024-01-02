@@ -4,12 +4,12 @@
 
         <Head title="Home" />
         <!-- ====== Hero Section Start -->
-        <div id="home" class="relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]">
+        <div id="home" class="relative overflow-hidden bg-primary pt-20">
             <div class="container">
                 <div class="-mx-4 flex flex-wrap items-center">
                     <div class="w-full px-4">
                         <div class="hero-content wow fadeInUp mx-auto max-w-[780px] text-center" data-wow-delay=".2s">
-                            <h1 class="mb-8 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug md:text-[45px] md:leading-snug"
+                            <h1 class="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug md:text-[45px] md:leading-snug"
                                 v-html="sanitizeHtml(html.sections[0].title)" />
                             <!-- <p class="mx-auto mb-10 max-w-[600px] text-base text-[#e4e4e4] sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed" -->
                             <!--     v-html="sanitizeHtml(html.sections[0].details)" /> -->
@@ -103,8 +103,7 @@
                                 class="pr-6 rtl:pr-0 rtl:pl-6 pb-5 md:col-span-6 lg:w-1/3" label="Department">
                                 <option :value="null">Select a department</option>
                                 <option v-for="department in departments" :key="department.id" :value="department.id">
-                                    {{
-                                        department.name }}
+                                    {{ department.name }}
                                 </option>
                             </select-input>
 
@@ -118,8 +117,7 @@
                                 class=" pb-5 md:col-span-6 lg:w-1/3" label="Category">
                                 <option :value="null">Select a category</option>
                                 <option v-for="category in categories" :key="category.id" :value="category.id">
-                                    {{
-                                        category.name }}
+                                    {{ category.name }}
                                 </option>
                             </select-input>
 
