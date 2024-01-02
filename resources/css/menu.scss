@@ -115,7 +115,7 @@ body{
     }
     &.active{
         .menu-link{
-            background-color: #7366ff;
+            background-color: #007579;
             -webkit-transition: all 0.5s ease;
             transition: all 0.5s ease;
             .menu__name{
@@ -131,10 +131,10 @@ body{
             &.have-sub-menu{
                 background-color: #dad6ff;
                 .menu__name{
-                    color: #7366ff;
+                    color: #007579;
                 }
                 .menu__icon{
-                    fill: #7366ff;
+                    fill: #007579;
                 }
                 &:after{
                     background-image: url("/images/svg/angle-down.svg");
@@ -146,12 +146,12 @@ body{
             .sub-menu-item{
                 &.active{
                     .menu__name{
-                        color: #7366ff;
+                        color: #007579;
                         -webkit-transition: all 0.3s ease;
                         transition: all 0.3s ease;
                     }
                     .menu__icon{
-                        fill: #7366ff;
+                        fill: #007579;
                         -webkit-transition: all 0.3s ease;
                         transition: all 0.3s ease;
                     }
@@ -164,12 +164,12 @@ body{
             &.have-sub-menu{
                 background-color: #dad6ff;
                 .menu__name{
-                    color: #7366ff;
+                    color: #007579;
                     -webkit-transition: all 0.3s ease;
                     transition: all 0.3s ease;
                 }
                 .menu__icon{
-                    fill: #7366ff;
+                    fill: #007579;
                     -webkit-transition: all 0.3s ease;
                     transition: all 0.3s ease;
                 }

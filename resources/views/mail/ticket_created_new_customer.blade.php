@@ -138,7 +138,7 @@
         }
         .mail-body .btn a {
             background-color: #ffffff;
-            border: solid 1px #7366ff;
+            border: solid 1px #007579;
             border-radius: 5px;
             box-sizing: border-box;
             color: #7366ff;

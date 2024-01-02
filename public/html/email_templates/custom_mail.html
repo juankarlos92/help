@@ -138,10 +138,10 @@
         }
         .mail-body .btn a {
             background-color: #ffffff;
-            border: solid 1px #7366ff;
+            border: solid 1px #007579;
             border-radius: 5px;
             box-sizing: border-box;
-            color: #7366ff;
+            color: #007579;
             cursor: pointer;
             display: inline-block;
             font-size: 14px;
@@ -153,12 +153,12 @@
         }
 
         .mail-body .btn-primary table td {
-            background-color: #7366ff;
+            background-color: #007579;
         }
 
         .mail-body .btn-primary a {
-            background-color: #7366ff;
-            border-color: #7366ff;
+            background-color: #007579;
+            border-color: #007579;
             color: #ffffff;
         }
 

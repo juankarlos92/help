@@ -36,22 +36,22 @@
                             <text-input v-model="form.subject" :error="form.errors.subject" class=" pb-5 w-full" label="Subject" />
 
                             <select-input v-model="form.department_id" :error="form.errors.department_id" class="pr-6 pb-5 md:col-span-6 lg:w-1/3" label="Department">
-                                <option :value="null">Select a department</option>
+                                <option :value="null">Seleccione un departamento</option>
                                 <option v-for="department in departments" :key="department.id" :value="department.id">{{ department.name }}</option>
                             </select-input>
 
                             <select-input v-model="form.type_id" :error="form.errors.type_id" class="pr-6 pb-5 md:col-span-6 lg:w-1/3" label="Ticket type">
-                                <option :value="null">Select a type</option>
+                                <option :value="null">Seleccione un tipo</option>
                                 <option v-for="type in types" :key="type.id" :value="type.id">{{ type.name }}</option>
                             </select-input>
 
                             <select-input v-model="form.category_id" :error="form.errors.category_id" class=" pb-5 md:col-span-6 lg:w-1/3" label="Category">
-                                <option :value="null">Select a category</option>
+                                <option :value="null">Seleccione una categoría</option>
                                 <option v-for="category in categories" :key="category.id" :value="category.id">{{ category.name }}</option>
                             </select-input>
 
                             <div class=" pt-2 pb-8 w-full">
-                                <label class="form-label" >Request Details:</label>
+                                <label class="form-label" >Detalles de Solicitud:</label>
                                 <ckeditor id="ticketDetails" :editor="editor" v-model="form.details" :error="form.errors.details" :config="editorConfig"></ckeditor>
                             </div>
 

@@ -191,7 +191,7 @@ class DashboardController extends Controller {
     }
 
     private function generateColorCount($items, $maxCount){
-        $colors = ['#c25ef1','#7562ca','#2980b9','#c0392b','#43c0dc','#7366ff','#800081','#2c3e50','#f39c12','#16a085','#27ae60'];
+        $colors = ['#c25ef1','#7562ca','#2980b9','#c0392b','#43c0dc','#007579','#800081','#2c3e50','#f39c12','#16a085','#27ae60'];
         foreach ($items as $itemKey => &$itemValue){
             $itemValue['value'] = ($itemValue['count'] * 100)/$maxCount;
             $itemValue['label'] = $itemValue['name'].' '.round($itemValue['value'], 2).'% ('.$itemValue['count'].')';

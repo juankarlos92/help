@@ -48,7 +48,10 @@
                         </ul>
                     </div>
                 </div>
+
+
                 <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-3/12">
+                    <!--
                     <div class="mb-10 w-full">
                         <h4 class="mb-9 text-lg font-semibold text-white">Newsletter</h4>
                         <p class="mt-5 text-white">Join our newsletter service.</p>
@@ -65,8 +68,11 @@
                                 <loading-button :loading="form.processing" class="rounded-lg bg-primary py-3 px-6 text-base font-medium justify-center text-white duration-300 ease-in-out hover:bg-opacity-80" type="submit">{{ __('Submit') }}</loading-button>
                             </div>
                         </form>
-                    </div><!--end col-->
+                    </div>
+                    -->
                 </div>
+
+
             </div>
         </div>
 

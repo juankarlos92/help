@@ -27,11 +27,12 @@
                                 class="relative my-[6px] block h-[2px] w-[30px] bg-white"
                             ></span>
                         </button>
+                        <!--
                         <nav
                             id="navbarCollapse"
                             class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6"
                         >
-                            <ul class="blcok lg:flex">
+                           <ul class="blcok lg:flex">
                                 <li class="group relative" :class="{'active' : active_menu === 'home'}" @click="active_menu = 'home'">
                                     <Link :href="route('home')" class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">{{ __('Home') }}</Link>
                                 </li>
@@ -52,6 +53,7 @@
                                 </li>
                             </ul>
                         </nav>
+                        -->
                     </div>
                     <div v-if="$page.props.auth && $page.props.auth.user" class="justify-end pr-16 flex lg:pr-0">
                         <div class="dd__wrapper">

@@ -76,26 +76,26 @@
                                         <div class="flex justify-center mb-4">
                                             <div class="flex flex-col pr-2">
                                                 <label class="block text-gray-700 text-xs font-bold mb-2" for="firstName">
-                                                    First Name
+                                                    Nombres:
                                                 </label>
                                                 <input v-model="init_user.firstName" class=" appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="firstName" type="text" placeholder="First name">
                                             </div>
                                             <div class="flex flex-col pl-2">
                                                 <label class="block text-gray-700 text-xs font-bold mb-2" for="lastName">
-                                                    Last Name
+                                                    Apellidos:
                                                 </label>
                                                 <input v-model="init_user.lastName" class=" appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="lastName" type="text" placeholder="Last name">
                                             </div>
                                         </div>
                                         <div class="mb-6">
                                             <label class="block text-gray-700 text-xs font-bold mb-2" for="emailAddress">
-                                                Email Addresss
+                                                Email:
                                             </label>
                                             <input v-model="init_user.email" class=" appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" id="emailAddress" type="text" placeholder="Email address">
                                         </div>
                                         <div class="flex items-center">
                                             <button class="flex text-gray-300 bg-gray-900 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline btn_start_chat" type="button" @click="startChat">
-                                                Start Chat
+                                                Iniciar Chat
                                             </button>
                                         </div>
                                     </form>
@@ -122,6 +122,7 @@
         <span class="disabled_button"></span>
 
         <!-- Color Picker -->
+        <!--
         <div id="color-switcher" @click="actionColorScheme($event)" data-expend="no" class="ease-in duration-300 shadow-sm fixed z-[999] top-[40%] right-[-154px] py-3 px-4 bg-white">
             <div class="shadow-sm absolute rounded-l-lg top-0 left-[-40px] w-10 h-10 bg-[#64748b] flex justify-center items-center scheme-button cursor-pointer">
                 <icon class="w-5 w-5 z-1 fill-white text-[24px]" name="gear" />
@@ -142,6 +143,7 @@
                 <div class="s_switch w-6 h-6 rounded-full bg-[#e11d48] cursor-pointer border border-transparent" data-scheme="scheme-rose" @click="setColorScheme($event)"></div>
             </div>
         </div>
+        -->
         <!-- Color Picker -->
 
 
