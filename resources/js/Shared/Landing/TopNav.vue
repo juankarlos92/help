@@ -11,50 +11,50 @@
                         <logo name="white" class="help-desk-logo white"/>
                     </Link>
                 </div>
-                <div class="flex w-full items-center justify-between px-4">
-                    <div>
-                        <button
-                            id="navbarToggler"
-                            class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary lg:hidden"
-                        >
-                <span
-                    class="relative my-[6px] block h-[2px] w-[30px] bg-white"
-                ></span>
-                            <span
-                                class="relative my-[6px] block h-[2px] w-[30px] bg-white"
-                            ></span>
-                            <span
-                                class="relative my-[6px] block h-[2px] w-[30px] bg-white"
-                            ></span>
-                        </button>
-                        <!--
-                        <nav
-                            id="navbarCollapse"
-                            class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6"
-                        >
-                           <ul class="blcok lg:flex">
-                                <li class="group relative" :class="{'active' : active_menu === 'home'}" @click="active_menu = 'home'">
-                                    <Link :href="route('home')" class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">{{ __('Home') }}</Link>
-                                </li>
-                                <li class="group relative" :class="{'active' : active_menu === 'services'}" @click="active_menu = 'services'">
-                                    <Link :href="route('services')" class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">{{ __('Services') }}</Link>
-                                </li>
-                                <li class="group relative" :class="{'active' : active_menu === 'kb'}" @click="active_menu = 'kb'">
-                                    <Link :href="route('kb')" class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">{{ __('Knowledge') }}</Link>
-                                </li>
-                                <li class="group relative" :class="{'active' : active_menu === 'faq'}" @click="active_menu = 'faq'">
-                                    <Link :href="route('faq')" class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">{{ __('FAQs') }}</Link>
-                                </li>
-                                <li class="group relative" :class="{'active' : active_menu === 'blog'}" @click="active_menu = 'blog'">
-                                    <Link :href="route('blog')" class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">{{ __('Blog') }}</Link>
-                                </li>
-                                <li class="group relative" :class="{'active' : active_menu === 'contact'}" @click="active_menu = 'contact'">
-                                    <Link :href="route('contact')" class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">{{ __('Contact') }}</Link>
-                                </li>
-                            </ul>
-                        </nav>
-                        -->
-                    </div>
+                <div class="flex w-full items-center justify-end px-4">
+                    <!-- <div> -->
+                    <!--     <button -->
+                    <!--         id="navbarToggler" -->
+                    <!--         class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary lg:hidden" -->
+                    <!--     > -->
+                    <!--         <span -->
+                    <!--             class="relative my-[6px] block h-[2px] w-[30px] bg-white" -->
+                    <!--         ></span> -->
+                    <!--         <span -->
+                    <!--             class="relative my-[6px] block h-[2px] w-[30px] bg-white" -->
+                    <!--         ></span> -->
+                    <!--         <span -->
+                    <!--             class="relative my-[6px] block h-[2px] w-[30px] bg-white" -->
+                    <!--         ></span> -->
+                    <!--     </button> -->
+                    <!--     <!-- -->
+                    <!--     <nav -->
+                    <!--         id="navbarCollapse" -->
+                    <!--         class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6" -->
+                    <!--     > -->
+                    <!--        <ul class="blcok lg:flex"> -->
+                    <!--             <li class="group relative" :class="{'active' : active_menu === 'home'}" @click="active_menu = 'home'"> -->
+                    <!--                 <Link :href="route('home')" class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">{{ __('Home') }}</Link> -->
+                    <!--             </li> -->
+                    <!--             <li class="group relative" :class="{'active' : active_menu === 'services'}" @click="active_menu = 'services'"> -->
+                    <!--                 <Link :href="route('services')" class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">{{ __('Services') }}</Link> -->
+                    <!--             </li> -->
+                    <!--             <li class="group relative" :class="{'active' : active_menu === 'kb'}" @click="active_menu = 'kb'"> -->
+                    <!--                 <Link :href="route('kb')" class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">{{ __('Knowledge') }}</Link> -->
+                    <!--             </li> -->
+                    <!--             <li class="group relative" :class="{'active' : active_menu === 'faq'}" @click="active_menu = 'faq'"> -->
+                    <!--                 <Link :href="route('faq')" class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">{{ __('FAQs') }}</Link> -->
+                    <!--             </li> -->
+                    <!--             <li class="group relative" :class="{'active' : active_menu === 'blog'}" @click="active_menu = 'blog'"> -->
+                    <!--                 <Link :href="route('blog')" class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">{{ __('Blog') }}</Link> -->
+                    <!--             </li> -->
+                    <!--             <li class="group relative" :class="{'active' : active_menu === 'contact'}" @click="active_menu = 'contact'"> -->
+                    <!--                 <Link :href="route('contact')" class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">{{ __('Contact') }}</Link> -->
+                    <!--             </li> -->
+                    <!--         </ul> -->
+                    <!--     </nav> -->
+                    <!--     -->
+                    <!-- </div> -->
                     <div v-if="$page.props.auth && $page.props.auth.user" class="justify-end pr-16 flex lg:pr-0">
                         <div class="dd__wrapper">
                             <dropdown class="mt-1 select_user" placement="bottom-end">
