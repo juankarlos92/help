@@ -2,7 +2,7 @@
     <div>
         <!-- Start Hero -->
         <Head title="Home" />
-        <section class="relative z-10 overflow-hidden bg-primary pt-20 pb-[100px]">
+        <section class="relative z-10 overflow-hidden bg-primary pt-20 pb-8">
             <div class="container">
                 <div class="-mx-4 flex flex-wrap items-center">
                     <div class="w-full px-4">
@@ -25,34 +25,34 @@
         </section><!--end section-->
 
         <!-- Start -->
-        <section class="pt-12 pb-10 lg:pb-20 bg-[#007579]">
+        <section class="pt-8 pb-10 lg:pb-20 bg-[#007579]">
             <div class="container">
                 <form class="card mt-2 p-4 rounded shadow-xl overflow-hidden" @submit.prevent="store" enctype="multipart/form-data">
                     <div class="px-5 pt-8">
                         <div class="flex flex-wrap">
-                            <text-input v-model="form.first_name" :error="form.errors.last_name" class="pr-6 pb-5 md:col-span-6 lg:w-1/3" label="First name" />
-                            <text-input v-model="form.last_name" :error="form.errors.last_name" class="pr-6 pb-5 md:col-span-6 lg:w-1/3" label="Last name" />
-                            <text-input v-model="form.email" :error="form.errors.email" class=" pb-5 md:col-span-6 lg:w-1/3" label="Email Address" />
-                            <text-input v-model="form.subject" :error="form.errors.subject" class=" pb-5 w-full" label="Subject" />
+                            <text-input v-model="form.first_name" :error="form.errors.last_name" class="pr-6 pb-5 md:col-span-6 lg:w-1/3" label="Nombres" />
+                            <text-input v-model="form.last_name" :error="form.errors.last_name" class="pr-6 pb-5 md:col-span-6 lg:w-1/3" label="Apellidos" />
+                            <text-input v-model="form.email" :error="form.errors.email" class=" pb-5 md:col-span-6 lg:w-1/3" label="Correo Electrónico " />
+                            <text-input v-model="form.subject" :error="form.errors.subject" class=" pb-5 w-full" label="Asunto" />
 
-                            <select-input v-model="form.department_id" :error="form.errors.department_id" class="pr-6 pb-5 md:col-span-6 lg:w-1/3" label="Department">
+                            <select-input v-model="form.department_id" :error="form.errors.department_id" class="pr-6 pb-5 md:col-span-6 lg:w-1/3" label="Departmento">
                                 <option :value="null">Seleccione un departamento</option>
                                 <option v-for="department in departments" :key="department.id" :value="department.id">{{ department.name }}</option>
                             </select-input>
 
-                            <select-input v-model="form.type_id" :error="form.errors.type_id" class="pr-6 pb-5 md:col-span-6 lg:w-1/3" label="Ticket type">
+                            <select-input v-model="form.type_id" :error="form.errors.type_id" class="pr-6 pb-5 md:col-span-6 lg:w-1/3" label="Tipo de asunto">
                                 <option :value="null">Seleccione un tipo</option>
                                 <option v-for="type in types" :key="type.id" :value="type.id">{{ type.name }}</option>
                             </select-input>
 
-                            <select-input v-model="form.category_id" :error="form.errors.category_id" class=" pb-5 md:col-span-6 lg:w-1/3" label="Category">
+                            <select-input v-model="form.category_id" :error="form.errors.category_id" class=" pb-5 md:col-span-6 lg:w-1/3" label="Categoría">
                                 <option :value="null">Seleccione una categoría</option>
                                 <option v-for="category in categories" :key="category.id" :value="category.id">{{ category.name }}</option>
                             </select-input>
 
                             <div class=" pt-2 pb-8 w-full">
                                 <label class="form-label" >Detalles de Solicitud:</label>
-                                <ckeditor id="ticketDetails" :editor="editor" v-model="form.details" :error="form.errors.details" :config="editorConfig"></ckeditor>
+                                <ckeditor class="focus:border-dark" id="ticketDetails" :editor="editor" v-model="form.details" :error="form.errors.details" :config="editorConfig"></ckeditor>
                             </div>
 
                         </div>
@@ -61,7 +61,7 @@
                         <input ref="file" type="file" accept=".xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf, .zip" class="hidden" multiple="multiple" @change="fileInputChange" />
                         <div class="pr-6 pb-8 w-full lg:w-full flex-col">
                             <button type="button" class="btn flex justify-center items-center border-0" @click="fileBrowse">
-                                <icon name="file" class="flex-shrink-0 h-8 fill-gray-400 pr-1" /> <h4>{{ __('Attach files') }}</h4>
+                                <icon name="file" class="flex-shrink-0 h-8 fill-gray-400 pr-1" /> <h4>{{ __('Subir archivo') }}</h4>
                             </button>
                             <div v-if="form.files.length" class="flex items-center justify-between pr-6 pt-8 w-full lg:w-1/2" v-for="(file, fi) in form.files" :key="fi">
                                 <div class="flex-1 pr-1">
@@ -74,7 +74,7 @@
                         <!-- Attachments -->
                     </div>
                     <div class="px-4 py-4 border-t border-gray-100 flex justify-end">
-                        <loading-button :loading="form.processing" class="rounded-lg bg-primary py-3 px-6 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-80" type="submit">Submit</loading-button>
+                        <loading-button :loading="form.processing" class="rounded-lg bg-primary py-3 px-6 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-80" type="submit">Enviar</loading-button>
                     </div>
 
                 </form>

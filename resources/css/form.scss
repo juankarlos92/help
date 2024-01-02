@@ -1,5 +1,5 @@
 .form-label {
-  @apply mb-2 block select-none;
+  @apply mb-2 block select-none focus:border-[#00757999];
     font-size: 15px;
     font-weight: bold;
 }
@@ -7,7 +7,7 @@
 .form-input,
 .form-textarea,
 .form-select {
-  @apply leading-normal block w-full border bg-white font-sans rounded text-left appearance-none relative focus:border-indigo-400 focus:ring;
+  @apply leading-normal block w-full border bg-white font-sans rounded text-left appearance-none relative focus:border-[#007579] focus:ring focus:ring-[#00757999];
     padding: 3px 10px;
     font-size: 15px;
     height: 2.3rem;
@@ -56,7 +56,7 @@
 
 .form-select{
     &:focus{
-        border-color: #9b4dca;
+        border-color: #007579;
         outline: 0;
     }
 }
@@ -121,8 +121,8 @@
             div{
                 cursor: pointer;
                 &.active{
-                    border-color: #1c64f2;
-                    color: #1c64f2;
+                    border-color: #007579;
+                    color: #007579;
                 }
             }
         }
