@@ -1,56 +1,56 @@
 
 <template>
     <!-- ====== Footer Section Start -->
-    <footer class="wow fadeInUp relative z-10 bg-footer-black pt-20 lg:pt-[80px]" data-wow-delay=".15s">
+    <footer class="wow fadeInUp relative z-10 bg-footer-black pt-8 lg:pt-8" data-wow-delay=".15s">
         <div class="container">
-            <div class="-mx-4 flex flex-wrap">
+            <div class="-mx-4 mb-8 flex flex-wrap justify-between items-center">
                 <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-3/12">
-                    <div class="mb-10 w-full">
-                        <Link :href="route('home')" class="mb-6 inline-block max-w-[160px]">
+                    <div class=" w-full">
+                        <Link :href="route('home')" class="inline-block max-w-[160px]">
                             <logo class="help-desk-logo" />
                         </Link>
-                        <p class="mb-7 text-base text-[#f3f4fe]" v-html="footer_text"></p>
+                        <!-- <p class="mb-7 text-base text-[#f3f4fe]" v-html="footer_text"></p> -->
                     </div>
                 </div>
-                <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-3/12">
-                    <div class="mb-10 w-full">
-                        <h4 class="mb-9 text-lg font-semibold text-white">Company</h4>
-                        <ul>
+                <div class="w-full flex flex-row px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-3/12 items-center">
+                    <div class="w-full">
+                        <!-- <h4 class="mb-9 text-lg font-semibold text-white">Admin</h4> -->
+                        <ul class="flex flex-row gap-8 justify-end">
                             <li v-if="!!this.enable_option && this.enable_option.show_login">
-                                <a :href="route('login')" class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"> Login</a>
+                                <a :href="route('login')" class="inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"> Login</a>
                             </li>
                             <li v-if="!!this.enable_option && this.enable_option.show_login">
-                                <a :href="route('register')" class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"> Register</a>
+                                <a :href="route('register')" class="inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"> Register</a>
                             </li>
                             <li v-if="!!this.enable_option && this.enable_option.blog">
-                                <a :href="route('blog')" class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary">
+                                <a :href="route('blog')" class="inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary">
                                     Blog
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-3/12">
-                    <div class="mb-10 w-full">
-                        <h4 class="mb-9 text-lg font-semibold text-white">Usefull Links</h4>
-                        <ul>
-                            <li>
-                                <a :href="route('terms_service')" class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"> Terms of Services</a>
-                            </li>
-                            <li>
-                                <a :href="route('privacy')" class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"> Privacy Policy</a>
-                            </li>
-                            <li v-if="!!this.enable_option && this.enable_option.kb">
-                                <a :href="route('kb')" class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary">
-                                    Knowledge Base
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <!-- <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-3/12"> -->
+                <!--     <div class="mb-10 w-full"> -->
+                <!--         <h4 class="mb-9 text-lg font-semibold text-white">Usefull Links</h4> -->
+                <!--         <ul> -->
+                <!--             <li> -->
+                <!--                 <a :href="route('terms_service')" class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"> Terms of Services</a> -->
+                <!--             </li> -->
+                <!--             <li> -->
+                <!--                 <a :href="route('privacy')" class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"> Privacy Policy</a> -->
+                <!--             </li> -->
+                <!--             <li v-if="!!this.enable_option && this.enable_option.kb"> -->
+                <!--                 <a :href="route('kb')" class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"> -->
+                <!--                     Knowledge Base -->
+                <!--                 </a> -->
+                <!--             </li> -->
+                <!--         </ul> -->
+                <!--     </div> -->
+                <!-- </div> -->
 
 
-                <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-3/12">
+                <!-- <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-3/12"> -->
                     <!--
                     <div class="mb-10 w-full">
                         <h4 class="mb-9 text-lg font-semibold text-white">Newsletter</h4>
@@ -70,13 +70,13 @@
                         </form>
                     </div>
                     -->
-                </div>
+                <!-- </div> -->
 
 
             </div>
         </div>
 
-        <div class="mt-12 border-t border-opacity-40 py-8 lg:mt-[60px]">
+        <div class="border-t border-opacity-40 py-8">
             <div class="container">
                 <div class="-mx-4 flex flex-wrap justify-center">
                     <div class="my-1 flex justify-center ">
@@ -87,9 +87,9 @@
         </div>
 
         <div>
-        <span class="absolute left-0 top-0 z-[-1]">
-          <img src="/landing/images/footer/shape-1.svg" alt="" />
-        </span>
+        <!-- <span class="absolute left-0 top-0 z-[-1]"> -->
+        <!--   <img src="/landing/images/footer/shape-1.svg" alt="" /> -->
+        <!-- </span> -->
 
             <span class="absolute bottom-0 right-0 z-[-1]">
           <img src="/landing/images/footer/shape-3.svg" alt="" />

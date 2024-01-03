@@ -35,7 +35,7 @@
                             <text-input v-model="form.email" :error="form.errors.email" class=" pb-5 md:col-span-6 lg:w-1/3" label="Correo Electrónico " />
                             <text-input v-model="form.subject" :error="form.errors.subject" class=" pb-5 w-full" label="Asunto" />
 
-                            <select-input v-model="form.department_id" :error="form.errors.department_id" class="pr-6 pb-5 md:col-span-6 lg:w-1/3" label="Departmento">
+                            <select-input v-model="form.department_id" :error="form.errors.department_id" class="pr-6 pb-5 md:col-span-6 lg:w-1/3" label="Departamento">
                                 <option :value="null">Seleccione un departamento</option>
                                 <option v-for="department in departments" :key="department.id" :value="department.id">{{ department.name }}</option>
                             </select-input>
